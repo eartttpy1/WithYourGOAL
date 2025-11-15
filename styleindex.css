@@ -7,7 +7,7 @@ body{
   font-family: "Inria Serif", serif;
   font-weight: 700;
   font-style: normal;
-  background-image: url();
+  background-image: url(/img/lightbg_pc.png);
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -183,7 +183,7 @@ p {
 }
 
 p:nth-child(1){
-  color:rgb(0, 0, 0);
+  color:rgb(255, 255, 255);
   margin-top: 5em;
 }
 
