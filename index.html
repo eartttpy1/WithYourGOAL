@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ============== Meta Tags ============== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ============== Page Title ============== -->
+    <title>Home</title>
+
+    <!-- ============== Font&Icon ============== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- ============== Start  Stylesheet ============== -->
+    <link rel="stylesheet" href="styleindex.css">
+
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li class="head" onclick=hideSidebar()><a href="#"><i width="26" height="26" class="fa-solid fa-xmark"></i></a></li>
+      <ul class="link">
+        <li><a href="#"><i class="fa-solid fa-house icon"></i><span>Home</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-flag icon"></i><span>Goal</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-clock icon"></i><span>Timer</span></a></li>
+      </ul>
+      <ul class="about">
+        <li><a href="#"><i class="fa-solid fa-circle-info"></i></a></li>
+        <li><a href="#"><i class="fa-solid fa-sun"></i></a></li>
+      </ul>
+    </ul>
+    <ul>
+      <ul class="mainIcon">
+        <li class="menu-button" onclick=showSidebar()><i width="26" height="26" class="fa-solid fa-bars"></i></a></li>
+        <li><a href="#">GOAL</a></li>
+      </ul>
+      <li class="hideOnMobile"><a href="#">Home</a></li>
+      <li class="hideOnMobile"><a href="#">Goal</a></li>
+      <li class="hideOnMobile"><a href="#">Timer</a></li>
+      <li class="login"><a href="#">Login</a></li>
+    </ul>
+  </nav>
+  <header><h1>With Your<br>Goal</h1></header>
+  <main>
+    <p>เว็บไซต์ที่ช่วยให้คุณทำตามเป้าหมายได้สำเร็จ</p>
+    <p>เริ่มทำตามเป้าหมายได้</p>
+    <a href="#"><button class="goal">GOAL !</button></a>
+
+  </main>
+
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+</body>
+</html>

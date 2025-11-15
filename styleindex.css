@@ -1,0 +1,287 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+  background-image: url(/img/lightbg_pc.png);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+nav{
+  background-color:  rgb(0, 78, 127);
+  border-bottom: 3px solid white;
+  box-shadow: 0px 10px 0px rgb(0, 78, 127);
+}
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav li{
+  height: 50px;
+}
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  color: rgb(255, 255, 255);
+}
+nav a i {
+  font-size: 1.7rem;
+  width: 30px; 
+  text-align: center;
+}
+nav a span {
+  font-size: 1.7rem;
+}
+nav a:hover{
+  background-color: rgba(82, 189, 255, 0.3);
+}
+
+.sidebar{
+  position: fixed;
+  top: 0; 
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgb(0, 78, 127);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.7);
+}
+.sidebar .head {
+  width: 100%;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 3px solid white;
+}
+
+.sidebar ul {
+  list-style: none;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.sidebar li {
+  width: 100%;
+  text-align: left;
+  
+}
+
+.sidebar li .icon{
+  padding-left: 10px;
+  transform: translateX(-50%);
+  
+}
+.sidebar a {
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-family: "Inria Serif", serif;
+}
+
+.sidebar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.sidebar .link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+.sidebar .link a {
+  display: flex;
+  align-items: center;
+}
+.sidebar .about {
+  display: flex;
+  padding: 0;
+  margin-top: auto;
+  margin-left: 0;
+  height: 3.5em; /* กำหนดความสูงที่แน่นอนให้ footer */
+  border-top: 3px solid white; /* ใช้ border แทน .line2 */
+  display: flex;
+  justify-content: space-between; /* จัดไอคอนซ้ายสุด-ขวาสุด */
+  align-items: center;
+}
+.sidebar .about i{
+  font-size: 1.8rem;
+}
+.menu-button{
+  display: none;
+  cursor: pointer;
+}
+i, a{
+      color: white;
+      font-size: 1.7rem;
+}
+nav .login{
+  border-radius: 50px;
+  width: auto;
+  height: 30px;
+  margin-right: 1em;
+  background-color: white;
+  box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+nav .login a{
+  color: rgb(0, 78, 127);
+}
+.fa-sun{
+  margin-left: auto;
+  cursor: pointer;
+}
+header {
+  text-align: center; 
+  padding: 2em 20px; 
+  margin-top: 2em;
+}
+
+h1{
+  font-size: 10rem;
+  text-shadow: 0 2px 5px rgb(0, 0, 0);
+  color: white;
+  line-height: 1.1;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding:  0 20px;
+  flex-grow: 1;
+  margin-bottom: 0;
+}
+
+p {
+  text-shadow: 2px 2px 2px black;
+  font-size: 2rem; 
+  color: white;
+  text-align: center;
+  margin: 0; 
+  line-height: 1.5; /* เพิ่มระยะห่างบรรทัด */
+}
+
+p:nth-child(1){
+  color:rgb(255, 255, 255);
+  margin-top: 5em;
+}
+
+p:nth-child(2){
+  margin-top: 1em;
+}
+button{
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.goal{
+  padding: 12px 25px;
+  border-radius: 50px;
+  border: none;
+  color:rgb(0, 78, 127);
+  font-size: 4rem;
+  margin: 1em 0px; 
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.2s linear;
+}
+
+.goal:hover, .signup:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+@media(max-width: 1024px){
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-button{
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+  }
+  h1 {
+    font-size: 5rem; /* กลับไปใช้ขนาดใหญ่ขึ้นสำหรับจอใหญ่ */
+  }
+  p {
+    font-size: 1.4rem;
+  }
+  p:nth-child(1){
+    color:rgb(255, 255, 255);
+    margin-top: 6em;
+  }
+  .goal {
+    font-size: 2rem;
+  }
+}
+@media(max-width: 500px){
+  body{
+    background-image: url(/img/bg_light.png);
+    height: 100dvh;
+  }
+  .sidebar{
+    width: 100%;
+  }
+  i, a{
+      color: white;
+      font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 4rem; /* กลับไปใช้ขนาดใหญ่ขึ้นสำหรับจอใหญ่ */
+  }
+  p {
+    font-size: 1rem;
+  }
+  p:nth-child(1){
+    color:rgb(255, 255, 255);
+    margin-top: 12em;
+  }
+  .goal {
+    font-size: 1.8rem;
+  }
+}
+@media(max-width: 320px){
+  body{
+    background-image: url(/img/bg_light.png);
+    height: 100dvh;
+  }
+  .sidebar{
+    width: 100%;
+  }
+  i, a{
+      color: white;
+      font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 4rem; /* กลับไปใช้ขนาดใหญ่ขึ้นสำหรับจอใหญ่ */
+  }
+  p {
+    font-size: 1rem;
+  }
+  p:nth-child(1){
+    color:rgb(255, 255, 255);
+    margin-top: 7em;
+  }
+  .goal {
+    font-size: 1.8rem;
+  }
+}
